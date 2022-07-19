@@ -1,0 +1,148 @@
+/* Aqui esta la fuente que usa el proyecto, aunque hice un global.css que ya la tiene */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800&display=swap");
+
+:root {
+	--main-color: #A2C415;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--main-color);
+}
+
+.container {
+	position: relative;
+	max-width: 430px;
+	margin: 100px 0;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+}
+
+.container .form {
+	padding: 30px;
+}
+
+.container .form .title {
+	position: relative;
+	font-size: 27px;
+	font-weight: 600;
+}
+
+.form .title::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 30px;
+	background-color: var(--main-color);
+	border-radius: 25px;
+}
+
+.form .input-field {
+	margin-top: 30px;
+	height: 50px;
+	width: 100%;
+	position: relative;
+}
+
+.input-field input {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 0 35px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid transparent;
+}
+
+.input-field svg {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 23px;
+}
+
+.form .checkbox-text {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox-content {
+	display: flex;
+	align-items: center;
+	color: #333;
+	font-size: 14px;
+}
+
+.checkbox-content .terms {
+	color: var(--main-color);
+}
+
+.checkbox-content input {
+	margin: 0 8px -2px 4px;
+	accent-color: var(--main-color);
+}
+
+.form .text {
+	color: #333
+  font-size: 14px;
+}
+
+.form a.text {
+	color: var(--main-color);
+	text-decoration: none;
+}
+
+.form a:hover {
+	text-decoration: underline;
+}
+
+.form .button {
+	margin-top: 35px;
+}
+
+.form .button input {
+	border: none;
+	color: #fff;
+	letter-spacing: 1px;
+	border-radius: 6px;
+	background: var(--main-color);
+	font-size: 17px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: ease all .3s;
+}
+
+.button input:hover {
+	opacity: 0.8;
+}
+
+.form .login-signup {
+	margin-top: 30px;
+	text-align: center;
+}
